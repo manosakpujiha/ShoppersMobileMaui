@@ -1,5 +1,5 @@
 **ShoppersMobile**
-
+ ![Shoppers Mobile Ui](![Shoppers mobile UI Screenshot 2024-08-01 043306](https://github.com/user-attachments/assets/6bd42b1f-fa6f-4d02-be9f-859e78ed8269))
 **Check-In 1 Submission for CMP1701 Project**
 
 Student(s): Manos Akpujiha (A00289665),  Darlington Mboma (A00313926) 
