@@ -1,5 +1,5 @@
 **ShoppersMobile**
- ![Shoppers Mobile Ui](![Shoppers mobile UI Screenshot 2024-08-01 043306](https://github.com/user-attachments/assets/6bd42b1f-fa6f-4d02-be9f-859e78ed8269))
+
 **Check-In 1 Submission for CMP1701 Project**
 
 Student(s): Manos Akpujiha (A00289665),  Darlington Mboma (A00313926) 
@@ -8,6 +8,7 @@ Current Date: 27-07-2024
 Microsoft Azure DevOps Project: https://dev.azure.com/A00289665/ShoppersMobile
 
 Figma Link: https://www.figma.com/design/1IuTQb8vmax451K6zIzatw/ShoppersMobile-UI-Design?node-id=41-3&t=KMrT9h4hIfVnuRvZ-0
+![Shoppers mobile UI Screenshot 2024-08-01 043306](https://github.com/user-attachments/assets/bfaa418f-c73c-4e53-9986-e4cf827d5dc7)
 
 **1.0 Introduction/App Idea**
 ShoppersMobile is a cross-platform mobile application designed to revolutionize how people collaborate while shopping for various items. Available on both  iOS and Android, ShoppersMobile ensures that you stay connected and organized,  no matter where you are in the world.
