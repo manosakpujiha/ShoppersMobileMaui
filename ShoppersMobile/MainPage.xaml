@@ -5,6 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout
+            BackgroundColor="#561010"
             Padding="30,0"
             Spacing="25">
             <Image
@@ -14,6 +15,7 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
+                BackgroundColor="#561010"
                 Text="Hello, World!"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
