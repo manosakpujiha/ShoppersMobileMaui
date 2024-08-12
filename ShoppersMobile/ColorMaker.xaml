@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppersMobile.ColorMaker"
+             Title="ColorMaker">
+
+    <ContentPage.Resources>
+                    <Color x:Key="PrimaryColor">#561010</Color>
+                    <Color x:Key="SecondaryColor">#0000ff</Color>
+                    <Color x:Key="TetiaryColor">#00ff00</Color>
+     </ContentPage.Resources>
+
+    
+    <Grid x:Name="Container" BackgroundColor="Orange">
+        <Frame BackgroundColor="{StaticResource PrimaryColor}" CornerRadius="40" Padding="20" Margin="10,0,10,0" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="15" VerticalOptions="Center">
+                <Label
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="Color Maker" />
+                <Slider x:Name="RedSlider" 
+                        Maximum="255" Value="0" 
+                        ThumbColor="{StaticResource TetiaryColor}"
+                        MaximumTrackColor="{StaticResource TetiaryColor}"
+                        MinimumTrackColor="{StaticResource SecondaryColor}"
+                />
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

@@ -20,6 +20,11 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private void On_Color_Maker_Btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ColorMaker());
+        }
     }
 
 }
