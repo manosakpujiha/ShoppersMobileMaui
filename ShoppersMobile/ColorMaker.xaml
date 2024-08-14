@@ -60,7 +60,7 @@
                         FontAttributes="Bold"
                         Text="Generate Random Color" 
                         Clicked="btnRandom_Clicked"
-                        />
+                />
             </VerticalStackLayout>
         </Frame>
     </Grid>
