@@ -5,26 +5,62 @@
              Title="ColorMaker">
 
     <ContentPage.Resources>
-                    <Color x:Key="PrimaryColor">#561010</Color>
+                    <Color x:Key="PrimaryColor">Tomato</Color>
                     <Color x:Key="SecondaryColor">#0000ff</Color>
                     <Color x:Key="TetiaryColor">#00ff00</Color>
      </ContentPage.Resources>
 
     
     <Grid x:Name="Container" BackgroundColor="Orange">
-        <Frame BackgroundColor="{StaticResource PrimaryColor}" CornerRadius="40" Padding="20" Margin="10,0,10,0" VerticalOptions="Center">
+        <Frame BackgroundColor="MediumPurple" CornerRadius="40" Padding="20" Margin="10,0,10,0" VerticalOptions="Center">
             <VerticalStackLayout Spacing="15" VerticalOptions="Center">
                 <Label
-                       FontAttributes="Bold"
-                       FontSize="Large"
-                       HorizontalTextAlignment="Center"
-                       Text="Color Maker" />
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   Text="Color Maker" />
+                <Label Text="Red Value"/>
                 <Slider x:Name="RedSlider" 
-                        Maximum="255" Value="0" 
-                        ThumbColor="{StaticResource TetiaryColor}"
-                        MaximumTrackColor="{StaticResource TetiaryColor}"
-                        MinimumTrackColor="{StaticResource SecondaryColor}"
+                    ThumbColor="{StaticResource PrimaryColor}"
+                    MaximumTrackColor="{StaticResource TetiaryColor}"
+                    MinimumTrackColor="{StaticResource SecondaryColor}"
+                    ValueChanged="Slider_ValueChanged"
                 />
+                <Label Text="Green Value"/>
+                <Slider x:Name="GreenSlider" 
+                    ThumbColor="{StaticResource TetiaryColor}"
+                    MaximumTrackColor="{StaticResource TetiaryColor}"
+                    MinimumTrackColor="{StaticResource SecondaryColor}"
+                    ValueChanged="Slider_ValueChanged"
+                />
+                <Label Text="Blue Value"/>  
+                <Slider x:Name="BlueSlider" 
+                    ThumbColor="{StaticResource SecondaryColor}"
+                    MaximumTrackColor="{StaticResource TetiaryColor}"
+                    MinimumTrackColor="{StaticResource SecondaryColor}"
+                    ValueChanged="Slider_ValueChanged"
+                 />
+                <Frame BackgroundColor="Purple" CornerRadius="25" Padding="20"  VerticalOptions="Center" HorizontalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Label x:Name="ColorLabel" 
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalTextAlignment="End"
+                            Text="Hex Value: #000000" />
+                        <ImageButton Margin="10,0, 0,0" HeightRequest="25"
+                                     VerticalOptions="Center"
+                                     Source="copyiconsvg"
+                                     WidthRequest="25" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Button x:Name="btnRandom"
+                        BackgroundColor="{StaticResource PrimaryColor}"
+                        BorderColor="{StaticResource SecondaryColor}"
+                        BorderWidth="2"
+                        FontAttributes="Bold"
+                        Text="Generate Random Color" 
+                        Clicked="btnRandom_Clicked"
+                        />
             </VerticalStackLayout>
         </Frame>
     </Grid>
