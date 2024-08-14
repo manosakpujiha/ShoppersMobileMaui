@@ -50,7 +50,9 @@
                         <ImageButton Margin="10,0, 0,0" HeightRequest="25"
                                      VerticalOptions="Center"
                                      Source="copyiconsvg"
-                                     WidthRequest="25" />
+                                     WidthRequest="25" 
+                                     Clicked="ImageButton_Clicked"
+                                     />
                     </HorizontalStackLayout>
                 </Frame>
                 <Button x:Name="btnRandom"

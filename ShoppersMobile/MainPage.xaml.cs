@@ -25,6 +25,12 @@
         {
             Navigation.PushAsync(new ColorMaker());
         }
+
+        
+             private void On_Color_Maker_Btn_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TipCalc());
+        }
     }
 
 }

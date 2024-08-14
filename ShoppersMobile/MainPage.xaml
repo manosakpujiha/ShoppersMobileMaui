@@ -36,19 +36,25 @@
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />-->
-
-            <Button
+                
+                <Button
                  x:Name="Color_Maker_Btn"
                  BackgroundColor="Tomato"
                  TextColor="White"
                  Text="Go to Color Maker" 
                  SemanticProperties.Hint="Add to list"
                  Clicked="On_Color_Maker_Btn_Clicked"
-                 HorizontalOptions="Fill"/>
-
-
-
-
+                 HorizontalOptions="Fill"
+                />
+                <Button
+                    x:Name="Tip_Calculator_Btn"
+                    BackgroundColor="Tomato"
+                    TextColor="White"
+                    Text="Go to Tip Calculator" 
+                    SemanticProperties.Hint="Add to list"
+                    Clicked="On_Color_Maker_Btn_Clicked_2"
+                    HorizontalOptions="Fill"
+                />
         </VerticalStackLayout>
     </ScrollView>
 

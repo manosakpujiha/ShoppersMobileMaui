@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace ShoppersMobile
 {
@@ -7,6 +8,9 @@ namespace ShoppersMobile
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+
+            builder.UseMauiApp<App>().UseMauiCommunityToolkit();
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -23,3 +27,4 @@ namespace ShoppersMobile
         }
     }
 }
+
