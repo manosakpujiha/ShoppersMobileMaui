@@ -15,20 +15,46 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
             <BoxView
-                
                  HeightRequest="400"
                  BackgroundColor="#282423"
                  WidthRequest="360"
                  HorizontalOptions="Fill"
                 Margin="20"
                 CornerRadius="40"/>
+
+            <Button
+                 x:Name="Data_Binding_Demo_Btn"
+                 BackgroundColor="Black"
+                 TextColor="White"
+                 Text="Go to Data Binding Demo Page" 
+                 SemanticProperties.Hint="Add to list"
+                 Clicked="Data_Binding_Demo_Btn_Clicked"
+                 HorizontalOptions="Fill"
+                />
+            <Button
+                 x:Name="Color_Maker_Btn"
+                 BackgroundColor="Black"
+                 TextColor="White"
+                 Text="Go to Color Maker" 
+                 SemanticProperties.Hint="Add to list"
+                 Clicked="On_Color_Maker_Btn_Clicked"
+                 HorizontalOptions="Fill"
+                />
+            <Button
+                    x:Name="Tip_Calculator_Btn"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    Text="Go to Tip Calculator" 
+                    SemanticProperties.Hint="Add to list"
+                    Clicked="On_Color_Maker_Btn_Clicked_2"
+                    HorizontalOptions="Fill"
+                />
             <Button
                  x:Name="CounterBtn"
                  BackgroundColor="#561010"
                  TextColor="White"
                  Text="Click me" 
                  SemanticProperties.Hint="Add to list"
-                 Clicked="OnCounterClicked"
                  HorizontalOptions="Fill" 
             />    
             <!--<Image
@@ -37,24 +63,6 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />-->
                 
-                <Button
-                 x:Name="Color_Maker_Btn"
-                 BackgroundColor="Tomato"
-                 TextColor="White"
-                 Text="Go to Color Maker" 
-                 SemanticProperties.Hint="Add to list"
-                 Clicked="On_Color_Maker_Btn_Clicked"
-                 HorizontalOptions="Fill"
-                />
-                <Button
-                    x:Name="Tip_Calculator_Btn"
-                    BackgroundColor="Tomato"
-                    TextColor="White"
-                    Text="Go to Tip Calculator" 
-                    SemanticProperties.Hint="Add to list"
-                    Clicked="On_Color_Maker_Btn_Clicked_2"
-                    HorizontalOptions="Fill"
-                />
         </VerticalStackLayout>
     </ScrollView>
 

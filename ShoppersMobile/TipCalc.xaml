@@ -63,7 +63,7 @@
                     <Label 
                       
                         Text="SUB-TOTAL"
-                        TextColor="Tomato"/>
+                        TextColor="{StaticResource PrimaryColor}"/>
                     <Label 
                          x:Name="lblSubtotal"
                         FontAttributes="Bold"
@@ -113,9 +113,9 @@
                 HeightRequest="70"
                 HorizontalOptions="CenterAndExpand"
                 Spacing="10">
-                <Button Text="10%" WidthRequest="70" Clicked="Button_Clicked"/>
-                <Button Text="15%" WidthRequest="70" Clicked="Button_Clicked"/>
-                <Button Text="20%" WidthRequest="70" Clicked="Button_Clicked"/>
+                <Button Text="10%" WidthRequest="70" Clicked="Button_Clicked" TextColor="{StaticResource FontColorL}" BackgroundColor="{StaticResource SecondaryColor}"/>
+                <Button Text="15%" WidthRequest="70" Clicked="Button_Clicked" TextColor="{StaticResource FontColorL}" BackgroundColor="{StaticResource SecondaryColor}"/>
+                <Button Text="20%" WidthRequest="70" Clicked="Button_Clicked" TextColor="{StaticResource FontColorL}" BackgroundColor="{StaticResource SecondaryColor}"/>
             </HorizontalStackLayout>
             <Label x:Name="lblTip2"
                 Grid.Row="2"
@@ -125,6 +125,7 @@
             <Slider x:Name="sldTip"
                  Grid.Row="2"
                  Grid.Column="1"
+                 MaximumTrackColor="{StaticResource FontColorG}"
                  Maximum="50"
                  Minimum="0"
                  ValueChanged="SlideTip_ValueChanged"
@@ -141,6 +142,8 @@
                 VerticalOptions="Center" >
                 <Button x:Name="btnMinus"
                         Text="-"
+                         TextColor="{StaticResource FontColorL}"
+ BackgroundColor="{StaticResource FontColorB}"
                         WidthRequest="70"
                         Clicked="btnMinus_Clicked"
                         
@@ -160,6 +163,8 @@
                 <Button x:Name="btnPlus"
                         Text="+"
                         WidthRequest="70"
+                        TextColor="{StaticResource FontColorL}"
+                        BackgroundColor="{StaticResource FontColorB}"
                         Clicked="btnPlus_Clicked"
                         /> 
 

@@ -2,24 +2,13 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        
 
         private void On_Color_Maker_Btn_Clicked(object sender, EventArgs e)
         {
@@ -27,9 +16,14 @@
         }
 
         
-             private void On_Color_Maker_Btn_Clicked_2(object sender, EventArgs e)
+        private void On_Color_Maker_Btn_Clicked_2(object sender, EventArgs e)
         {
             Navigation.PushAsync(new TipCalc());
+        }
+
+        private void Data_Binding_Demo_Btn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DataBindDemoPage());
         }
     }
 

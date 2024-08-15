@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppersMobile.MVVM.Views.HomeView"
+             Title="HomeView">
+    <ScrollView>
+        <VerticalStackLayout
+        BackgroundColor="#561010"
+        Padding="30,0"
+        Spacing="25">
+
+            <Label
+            BackgroundColor="#561010"
+            Text="ShoppersMobile!"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+            <BoxView
+             HeightRequest="400"
+             BackgroundColor="#282423"
+             WidthRequest="360"
+             HorizontalOptions="Fill"
+            Margin="20"
+            CornerRadius="40"/>
+
+
+            <Button
+                 x:Name="BMIView_btn"
+                 BackgroundColor="Black"
+                 TextColor="White"
+                 Text="Go to BMI Calculator" 
+                 SemanticProperties.Hint="BMI Calculator Button"
+                 Clicked="BMIView_btn_Clicked"
+                 HorizontalOptions="Fill"
+            />  
+            <!--<Button
+             x:Name="Data_Binding_Demo_Btn"
+             BackgroundColor="Black"
+             TextColor="White"
+             Text="Go to Data Binding Demo Page" 
+             SemanticProperties.Hint="Add to list"
+             Clicked="Data_Binding_Demo_Btn_Clicked"
+             HorizontalOptions="Fill"
+            />-->
+            <Button
+             x:Name="Color_Maker_Btn"
+             BackgroundColor="Black"
+             TextColor="White"
+             Text="Go to Color Maker" 
+             SemanticProperties.Hint="Add to list"
+             Clicked="On_Color_Maker_Btn_Clicked"
+             HorizontalOptions="Fill"
+            />
+            <Button
+                x:Name="Tip_Calculator_Btn"
+                BackgroundColor="Black"
+                TextColor="White"
+                Text="Go to Tip Calculator" 
+                SemanticProperties.Hint="Add to list"
+                Clicked="On_Color_Maker_Btn_Clicked_2"
+                HorizontalOptions="Fill"
+            />
+            <!--<Button
+             x:Name="CounterBtn"
+             BackgroundColor="#561010"
+             TextColor="White"
+             Text="Click me" 
+             SemanticProperties.Hint="Add to list"
+             HorizontalOptions="Fill" 
+        />-->
+            <!--<Image
+            Source="dotnet_bot.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
