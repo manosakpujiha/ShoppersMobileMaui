@@ -1,4 +1,6 @@
-﻿namespace ShoppersMobile
+﻿using ShoppersMobile.MVVM.Views;
+
+namespace ShoppersMobile
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new AppShell());
+            MainPage = new NavigationPage(new HomeView());
         }
     }
 }
